@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const array = [];
+        while (true) {
+            numero = prompt("Digite um número ou 'a' para terminar");
+            if (numero.toLowerCase() === 'a'){
+                break;
+            } else{
+                array.push(numero);
+            }
+        }
+
+        const par = [];
+        for (i in array) {
+            if (array[i] % 2 == 0) {
+                par.push(array[i]);
+            }
+        }
+        
+        alert("os numeros pares são: "+(par))
+        
+        
+    </script>
+
+</body>
+</html>

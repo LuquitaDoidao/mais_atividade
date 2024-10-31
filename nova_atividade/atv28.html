@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var array = [];
+        while (true) {
+            numero = parseInt(prompt("Digite um número ou '-1' para terminar"))
+            if (numero == -1){
+                break;
+            } else{
+                array.push(numero);
+            }
+        }
+
+        var maior = array[0];
+
+        for (i in array) {
+            if (array[i] > maior){
+                maior = array[i]
+            } 
+        }
+        
+        alert("o maior numero é: "+maior)
+        
+        
+    </script>
+
+</body>
+</html>
